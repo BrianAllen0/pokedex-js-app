@@ -23,10 +23,13 @@ let pokemonRepository = (function () {
     function add(newPokemon) {
         pokemonList.push(newPokemon);
     }
+    return {
+        getAll: getAll,
+        add: add
+    }
 })();
 
-
-pokemonList.forEach(function(pokemon){
+pokemonRepository.getAll().forEach(function(pokemon){
     document.write('Name: ' + pokemon.name + '<br>');
     let heightComment = "";
     if(pokemon.height >= 0.6)
