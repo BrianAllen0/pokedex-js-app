@@ -1,40 +1,24 @@
 let pokemonRepository = (function () {
     let pokemonList = [];
-    let bulbasaurObject = {
-        name: 'Bulbasaur',
-        height: 0.7,
-        types: ['Grass', 'Poison']
-    }
-    let charmanderObject = {
-        name: 'Charmander',
-        height: 0.6,
-        types: ['Fire']
-    }
-    let squirtleObject = {
-        name: 'Squirtle',
-        height: 0.5,
-        types: ['Water']
-    }
-    pokemonList.push(bulbasaurObject, charmanderObject, squirtleObject);
-    
+    pokemonList.push({name: 'Bulbasaur', height: 0.7, types: ['Grass', 'Poison']}, {name: 'Charmander', height: 0.6, types: ['Fire']}, {name: 'Squirtle', height: 0.5, types: ['Water']});
     function getAll() {
         return pokemonList;
     }
-    function add(newPokemon) {
-        pokemonList.push(newPokemon);
+    function addListItem(pokemon) {
+        let pokemonUnorderedList = document.querySelector('.pokemon-list');
+        let listItem = document.createElement('li');
+        let button = document.createElement('button');
+        button.innerText = pokemon.name;
+        button.classList.add('pokemon-button')
+        listItem.appendChild(button);
+        pokemonUnorderedList.appendChild(listItem);
     }
     return {
         getAll: getAll,
-        add: add
+        addListItem: addListItem
     }
 })();
 
-let pokemonList = document.querySelector('.pokemon-list');
 pokemonRepository.getAll().forEach(function(pokemon){
-    let listItem = document.createElement('li');
-    let button = document.createElement('button');
-    button.innerText = pokemon.name;
-    button.classList.add('pokemon-button')
-    listItem.appendChild(button);
-    pokemonList.appendChild(listItem);
+    pokemonRepository.addListItem(pokemon);
 });
