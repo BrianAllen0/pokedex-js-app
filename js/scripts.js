@@ -34,7 +34,7 @@ let pokemonRepository = (function () {
                     name: item.name,
                     detailsUrl: item.url
                 };
-                add(pokemon);
+                addListItem(pokemon);
             });
         }).catch(function(e) {
             console.error(e);
@@ -65,5 +65,5 @@ let pokemonRepository = (function () {
 pokemonRepository.loadList().then(function() {
     pokemonRepository.getAll().forEach(function(pokemon) {
         pokemonRepository.addListItem(pokemon);
-    })
-})
+    });
+});
