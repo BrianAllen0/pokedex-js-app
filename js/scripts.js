@@ -8,7 +8,7 @@ let pokemonRepository = (function () {
 
     function showDetails(pokemon) {
         loadDetails(pokemon).then(function() {
-            console.log(pokemon);
+            
         });
     }
 
@@ -57,10 +57,11 @@ let pokemonRepository = (function () {
     return {
         getAll: getAll,
         addListItem: addListItem,
-        loadList: loadList,
-        loadDetails: loadDetails
+        loadList: loadList
     }
 })();
+
+
 
 pokemonRepository.loadList().then(function() {
     pokemonRepository.getAll().forEach(function(pokemon) {
