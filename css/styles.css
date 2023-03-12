@@ -3,20 +3,20 @@
     box-sizing: border-box;
 }
 
-.type-normal {background-color: rgb(170, 170, 153);border-radius: 3px;margin-bottom: 3px;}
-.type-fire {background-color: rgb(236, 66, 37);border-radius: 3px;margin-bottom: 3px;}
-.type-water {background-color: rgb(78, 154, 255);border-radius: 3px;margin-bottom: 3px;}
-.type-electric {background-color: rgb(245, 204, 52);border-radius: 3px;margin-bottom: 3px;}
-.type-grass {background-color: rgb(119, 204, 85);border-radius: 3px;margin-bottom: 3px;}
-.type-fighting {background-color: rgb(187, 85, 69);border-radius: 3px;margin-bottom: 3px;}
-.type-poison {background-color: rgb(170, 85, 153);border-radius: 3px;margin-bottom: 3px;}
-.type-ground {background-color: rgb(221, 187, 85);border-radius: 3px;margin-bottom: 3px;}
-.type-flying {background-color: rgb(136, 153, 255);border-radius: 3px;margin-bottom: 3px;}
-.type-psychic {background-color: rgb(238, 84, 153);border-radius: 3px;margin-bottom: 3px;}
-.type-bug {background-color: rgb(170, 187, 34);border-radius: 3px;margin-bottom: 3px;}
-.type-rock {background-color: rgb(187, 170, 102);border-radius: 3px;margin-bottom: 3px;}
-.type-ghost {background-color: rgb(102, 103, 188);border-radius: 3px;margin-bottom: 3px;}
-.type-dragon {background-color: rgb(120, 103, 238);border-radius: 3px;margin-bottom: 3px;}
+.type-Normal {background-color: rgb(170, 170, 153);border-radius: 3px;margin-bottom: 3px;}
+.type-Fire {background-color: rgb(236, 66, 37);border-radius: 3px;margin-bottom: 3px;}
+.type-Water {background-color: rgb(78, 154, 255);border-radius: 3px;margin-bottom: 3px;}
+.type-Electric {background-color: rgb(245, 204, 52);border-radius: 3px;margin-bottom: 3px;}
+.type-Grass {background-color: rgb(119, 204, 85);border-radius: 3px;margin-bottom: 3px;}
+.type-Fighting {background-color: rgb(187, 85, 69);border-radius: 3px;margin-bottom: 3px;}
+.type-Poison {background-color: rgb(170, 85, 153);border-radius: 3px;margin-bottom: 3px;}
+.type-Ground {background-color: rgb(221, 187, 85);border-radius: 3px;margin-bottom: 3px;}
+.type-Flying {background-color: rgb(136, 153, 255);border-radius: 3px;margin-bottom: 3px;}
+.type-Psychic {background-color: rgb(238, 84, 153);border-radius: 3px;margin-bottom: 3px;}
+.type-Bug {background-color: rgb(170, 187, 34);border-radius: 3px;margin-bottom: 3px;}
+.type-Rock {background-color: rgb(187, 170, 102);border-radius: 3px;margin-bottom: 3px;}
+.type-Ghost {background-color: rgb(102, 103, 188);border-radius: 3px;margin-bottom: 3px;}
+.type-Dragon {background-color: rgb(120, 103, 238);border-radius: 3px;margin-bottom: 3px;}
 
 .pokemon-button {
     background-color: rgb(60, 60, 60);
@@ -28,7 +28,6 @@
     min-width: 100px;
 }
 
-/* details are a modal*/
 .details-container {
     display: none;
 }
@@ -47,7 +46,7 @@
     z-index: 999;
 }
 
-.details {
+.details-modal {
     display: flex;
     flex-direction: row;
     color: white;
