@@ -25,6 +25,7 @@ let pokemonRepository = (function () {
             weight.innerText = 'Weight: ' + (pokemon.weight/10) + 'kg';
             pokemon.types.forEach(type => {
                 let newType = document.createElement('li');
+                newType.style.textAlign = 'center';
                 let typeText = (type.type.name.charAt(0).toUpperCase() + type.type.name.slice(1));
                 newType.innerText = typeText;
                 newType.classList.add('type-' + typeText);
@@ -79,7 +80,12 @@ let pokemonRepository = (function () {
         
         button.addEventListener('click', function(){showDetails(pokemon);})
         button.innerText = pokemon.name;
-        button.classList.add('pokemon-button')
+        button.classList.add('pokemon-button');
+        button.classList.add('btn');
+        button.classList.add('btn-secondary');
+        /*button.classList.add('list-group-item');*/
+        button.setAttribute('data-toggle', 'modal');
+        button.setAttribute('data-target', '#details-modal');
         
         listItem.appendChild(button);
         pokemonUnorderedList.appendChild(listItem);

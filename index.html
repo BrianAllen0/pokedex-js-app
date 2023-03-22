@@ -13,34 +13,33 @@
             <div class="pokedex">
                 <div class="pokedex-background">
                     <h1 class="pokedex-header">Pokedex</h1>
-                    <ul class="pokemon-list"></ul>
+                    <ul class="pokemon-list list-group"></ul>
                 </div>
             </div>
-            <div class="details-container">
-                <div class="details-modal">
-                    <div class="details-visual-display">
-                        <h1 class="details-visual-display__name"></h1>
-                        <img class="details-visual-display__image" src="">
-                    </div>
-                    <div class="details-stats">
-                        <div class="details-stylebox">
-                            <h2>Body</h2>
-                            <div class="details-stats__height">
-                            </div>
-                            <div class="details-stats__weight">
-                            </div>
+            <div class="modal fade" id="details-modal" tabindex="-1" role="dialog" aria-hidden="true">
+                <div class="modal-dialog" id="details-modal-bg" role="document">
+                    <div class="modal-content" id="details-inner">
+                        <div class="details-visual-display">
+                            <h1 class="details-visual-display__name"></h1>
+                            <img class="details-visual-display__image" src="">
                         </div>
-                        <div class="details-stylebox">
-                            <h2>Type</h2>
-                            <ul class="details-stats__type">
-                            </ul>
-                        </div> 
+                        <div class="details-stats">
+                            <div class="details-stylebox">
+                                <h2>Body</h2>
+                                <div class="details-stats__height"></div>
+                                <div class="details-stats__weight"></div>
+                            </div>
+                            <div class="details-stylebox">
+                                <h2>Type</h2>
+                                <ul class="details-stats__type">
+                                </ul>
+                            </div> 
+                        </div>
+                        <button class="details-close-button btn btn-secondary" data-dismiss="modal" data-target="#details-modal">
+                            <img class="details-close-button__image" src="./img/CloseIcon.svg">
+                        </button>
                     </div>
-                    <button class="details-close-button">
-                        <img class="details-close-button__image" src="./img/CloseIcon.svg">
-                    </button>
                 </div>
-                
             </div>
             <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
             <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
