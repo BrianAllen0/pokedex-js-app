@@ -105,7 +105,7 @@ let pokemonRepository = (function () {
         }
     });
 
-    detailsCloseButton.addEventListener('click', (event) => {
+    detailsCloseButton.addEventListener('click', () => {
         closeDetailsModal();
     });
 
