@@ -30,6 +30,11 @@
 }
 
 #details-inner {
+    flex-direction: column;
+}
+
+.details-modal-body {
+    display: flex;
     flex-direction: row;
 }
 
@@ -39,6 +44,12 @@
 
 .details-container {
     display: none;
+}
+
+.details-close-button-container {
+    display: flex;
+    justify-content: end;
+    
 }
 
 .details-container.is-visible {
@@ -169,3 +180,11 @@
     padding: 20px;
     width: fit-content;
 }
+
+@media (max-width: 512px) {
+    .details-modal-body {
+        display: flex;
+        flex-direction: column;
+    }
+}
+  

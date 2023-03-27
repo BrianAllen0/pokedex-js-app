@@ -19,6 +19,11 @@
             <div class="modal fade" id="details-modal" tabindex="-1" role="dialog" aria-hidden="true">
                 <div class="modal-dialog" id="details-modal-bg" role="document">
                     <div class="modal-content" id="details-inner">
+                        <div class="details-close-button-container">
+                            <button class="details-close-button btn btn-secondary" data-dismiss="modal" data-target="#details-modal">
+                                <img class="details-close-button__image" src="./img/CloseIcon.svg">
+                            </button>
+                        </div>
                         <div class="details-modal-body">
                             <div class="details-visual-display">
                                 <h1 class="details-visual-display__name"></h1>
@@ -36,11 +41,6 @@
                                     </ul>
                                 </div>
                             </div>
-                        </div>
-                        <div class="details-close-button-container">
-                            <button class="details-close-button btn btn-secondary float-end" data-dismiss="modal" data-target="#details-modal">
-                                <img class="details-close-button__image" src="./img/CloseIcon.svg">
-                            </button>
                         </div>
                     </div>
                 </div>
